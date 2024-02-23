@@ -1,54 +1,89 @@
+@font-face /*define fuentes personalizadas */
+{
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf format')('truetype'); 
+}  
+@font-face 
+{
+  font-family: 'roboto-regular';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype'); 
+}  
 body{
-    background-color: rgb(54, 56, 77); /* Establece el color de fondo de la página */
+    background-color: rgb(54, 56, 77); 
+    font-family: roboto-regular;
   }
   
   .container {
-    background-color: white; /* Establece el color de fondo del contenedor pequeño */
+    background-color: white; 
     padding:0;
   
   }
   .imagen-desktop {
-    display: none; /* Oculta la imagen para computadora en pantallas de móviles */
+    display: none; 
     max-width: 100%;
   }
   .contenedor2
   {
     padding:25px;
   }
+
+  .bloque {
+    height: 100vh;
+    background-color: white;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+  }
+
   @media (min-width: 768px) {
     .imagen-movil {
-      display: none; /* Oculta la imagen para móviles en pantallas de computadora */
+      display: none; 
       width: 100%;
     
     }
     
     .imagen-desktop {
-      display: block; /* Muestra la imagen para computadora en pantallas de computadora */
+      display: block; 
     }
     .container {
-      display: flex; /* Convierte el contenedor en un contenedor flex */
-      align-items: center; /* Alinea verticalmente el contenido del contenedor */
-      justify-content: center; /* Centra horizontalmente el contenido del contenedor */
+      display: flex; 
+      align-items: center;
+      justify-content: center; 
       border-radius: 30px; 
       padding: 15px;
+      
     }
+   
+      .bloque {
+        width: 400px;
+        height: 400px;
+        border-radius: 5px;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+    
     
   }
-  
-  /* Estilos personalizados */
+  @media (max-width: 768px) {
+    .container {
+      height: 100vh;
+  }
+}
+
   .custom-container {
-    max-width: 960px; /* Establece el ancho máximo del contenedor */
-    margin-top: 0 !important; /* Elimina el margen superior */
+    max-width: 960px;
+    margin-top: 0 !important; 
   }
   
-  .bloque{
-    background-color: white;
-  
-  }
-  #boton2{
+
+  button{
     padding: 8px 15px;
     margin-bottom: 10px;
     border-radius: 5px;
+    background-color: rgb(54, 56, 77);
+    color:white;
+
   }
   
   
