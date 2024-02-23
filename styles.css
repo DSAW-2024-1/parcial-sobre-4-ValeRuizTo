@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(54, 56, 77); /* Establece el color de fondo de la página */
+  }
+  
+  .container {
+    background-color: white; /* Establece el color de fondo del contenedor pequeño */
+    padding:0;
+  
+  }
+  .imagen-desktop {
+    display: none; /* Oculta la imagen para computadora en pantallas de móviles */
+    max-width: 100%;
+  }
+  .contenedor2
+  {
+    padding:25px;
+  }
+  @media (min-width: 768px) {
+    .imagen-movil {
+      display: none; /* Oculta la imagen para móviles en pantallas de computadora */
+      width: 100%;
+    
+    }
+    
+    .imagen-desktop {
+      display: block; /* Muestra la imagen para computadora en pantallas de computadora */
+    }
+    .container {
+      display: flex; /* Convierte el contenedor en un contenedor flex */
+      align-items: center; /* Alinea verticalmente el contenido del contenedor */
+      justify-content: center; /* Centra horizontalmente el contenido del contenedor */
+      border-radius: 30px; 
+      padding: 15px;
+    }
+    
+  }
+  
+  /* Estilos personalizados */
+  .custom-container {
+    max-width: 960px; /* Establece el ancho máximo del contenedor */
+    margin-top: 0 !important; /* Elimina el margen superior */
+  }
+  
+  .bloque{
+    background-color: white;
+  
+  }
+  #boton2{
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  
